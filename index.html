@@ -12,9 +12,92 @@
 
         <!--Internal Files-->
         <link rel="Stylesheet" href="css/main.css">
-
+        <style>
+            /* Rectangle 1 */
+            .search-container {
+              box-sizing: border-box;
+              position: relative;
+              width: 296px;
+              height: 50px;
+              margin-left: auto;
+              margin-right: 20px;
+              border: 1px solid #000000;
+              border-radius: 60px;
+            }
+          
+            /* Search... */
+            .search-container input[type="text"] {
+              position: absolute;
+              width: 180px;
+              height: 32px;
+              left: 0;
+              top: 9px;
+              padding-left: 10px;
+              line-height: 15px;
+              display: block;
+              border: none;
+              color: #000000;
+              background-color: transparent;
+            }
+          
+            /* Group 1 */
+            .search-container .group {
+              position: absolute;
+              width: 22px;
+              height: 26px;
+              right: 0;
+              top: 12px;
+              background-image: url("path/to/group-image.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          
+            /* Navigation links */
+            nav ul {
+              display: flex;
+              justify-content: space-between;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+          
+            nav ul li {
+              margin: 0 10px;
+            }
+          
+            nav ul li a {
+              display: block;
+              color: #000000;
+              text-decoration: none;
+              line-height: 15px;
+              text-transform: uppercase;
+            }
+          </style>
+          
 </head>
 <body>
-    
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#"><h1>STREAM</h1></a></li>
+                <li><a href="#">Recent Releases</a></li>
+                <li><a href="#">Popular Albums</a></li>
+                <li><a href="#">About Label</a></li>
+                <li><a href="#">My Playlists</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <div class="group"></div>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <header>
+            <h3><p>Artist<br></h3>
+            <h1>ALBUM NAME</p></h1>
+        </header>
+    </section>
+
+      
 </body>
 </html>
